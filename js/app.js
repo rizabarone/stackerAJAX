@@ -72,7 +72,7 @@ var getUnanswered = function(tags) {
 
 
 var result = $.ajax({
-		url: "http://api.stackexchange.com/2.2/questions/unanswered",
+		url: "https://api.stackexchange.com/2.2/questions/unanswered",
 		data: request,
 		dataType: "jsonp",
 		type: "GET"
@@ -95,7 +95,7 @@ var result = $.ajax({
 
 
 var getInspiration = function(tag) {
-    var url = "http://api.stackexchange.com/2.2/tags/" + tag + "/top-answerers/all_time";
+    var url = "https://api.stackexchange.com/2.2/tags/" + tag + "/top-answerers/all_time";
     var request = {
         site: 'stackoverflow'
     };
